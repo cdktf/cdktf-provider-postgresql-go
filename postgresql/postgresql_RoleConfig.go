@@ -24,6 +24,10 @@ type RoleConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/role#name Role#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
+	// Role to switch to at login.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/role#assume_role Role#assume_role}
+	AssumeRole *string `field:"optional" json:"assumeRole" yaml:"assumeRole"`
 	// Determine whether a role bypasses every row-level security (RLS) policy.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/role#bypass_row_level_security Role#bypass_row_level_security}

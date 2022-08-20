@@ -13,6 +13,9 @@ import (
 // Represents a {@link https://www.terraform.io/docs/providers/postgresql/r/role postgresql_role}.
 type Role interface {
 	cdktf.TerraformResource
+	AssumeRole() *string
+	SetAssumeRole(val *string)
+	AssumeRoleInput() *string
 	BypassRowLevelSecurity() interface{}
 	SetBypassRowLevelSecurity(val interface{})
 	BypassRowLevelSecurityInput() interface{}
@@ -144,6 +147,7 @@ type Role interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	ResetAssumeRole()
 	ResetBypassRowLevelSecurity()
 	ResetConnectionLimit()
 	ResetCreateDatabase()
@@ -179,6 +183,26 @@ type Role interface {
 // The jsii proxy struct for Role
 type jsiiProxy_Role struct {
 	internal.Type__cdktfTerraformResource
+}
+
+func (j *jsiiProxy_Role) AssumeRole() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"assumeRole",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Role) AssumeRoleInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"assumeRoleInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_Role) BypassRowLevelSecurity() interface{} {
@@ -768,6 +792,14 @@ func NewRole_Override(r Role, scope constructs.Construct, id *string, config *Ro
 	)
 }
 
+func (j *jsiiProxy_Role) SetAssumeRole(val *string) {
+	_jsii_.Set(
+		j,
+		"assumeRole",
+		val,
+	)
+}
+
 func (j *jsiiProxy_Role) SetBypassRowLevelSecurity(val interface{}) {
 	_jsii_.Set(
 		j,
@@ -1170,6 +1202,14 @@ func (r *jsiiProxy_Role) OverrideLogicalId(newLogicalId *string) {
 		r,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
+	)
+}
+
+func (r *jsiiProxy_Role) ResetAssumeRole() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetAssumeRole",
+		nil, // no parameters
 	)
 }
 

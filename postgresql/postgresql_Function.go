@@ -30,6 +30,9 @@ type Function interface {
 	Count() *float64
 	// Experimental.
 	SetCount(val *float64)
+	Database() *string
+	SetDatabase(val *string)
+	DatabaseInput() *string
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -106,6 +109,7 @@ type Function interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutArg(value interface{})
 	ResetArg()
+	ResetDatabase()
 	ResetDropCascade()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -203,6 +207,26 @@ func (j *jsiiProxy_Function) Count() *float64 {
 	_jsii_.Get(
 		j,
 		"count",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Function) Database() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"database",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Function) DatabaseInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"databaseInput",
 		&returns,
 	)
 	return returns
@@ -475,6 +499,14 @@ func (j *jsiiProxy_Function) SetCount(val *float64) {
 	_jsii_.Set(
 		j,
 		"count",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Function) SetDatabase(val *string) {
+	_jsii_.Set(
+		j,
+		"database",
 		val,
 	)
 }
@@ -760,6 +792,14 @@ func (f *jsiiProxy_Function) ResetArg() {
 	_jsii_.InvokeVoid(
 		f,
 		"resetArg",
+		nil, // no parameters
+	)
+}
+
+func (f *jsiiProxy_Function) ResetDatabase() {
+	_jsii_.InvokeVoid(
+		f,
+		"resetDatabase",
 		nil, // no parameters
 	)
 }

@@ -32,6 +32,10 @@ type FunctionConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/function#arg Function#arg}
 	Arg interface{} `field:"optional" json:"arg" yaml:"arg"`
+	// The database where the function is located. If not specified, the provider default database is used.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/function#database Function#database}
+	Database *string `field:"optional" json:"database" yaml:"database"`
 	// Automatically drop objects that depend on the function (such as operators or triggers), and in turn all objects that depend on those objects.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/function#drop_cascade Function#drop_cascade}
