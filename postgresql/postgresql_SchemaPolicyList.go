@@ -111,6 +111,9 @@ func (j *jsiiProxy_SchemaPolicyList) WrapsSet() *bool {
 func NewSchemaPolicyList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SchemaPolicyList {
 	_init_.Initialize()
 
+	if err := validateNewSchemaPolicyListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_SchemaPolicyList{}
 
 	_jsii_.Create(
@@ -132,7 +135,10 @@ func NewSchemaPolicyList_Override(s SchemaPolicyList, terraformResource cdktf.II
 	)
 }
 
-func (j *jsiiProxy_SchemaPolicyList) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_SchemaPolicyList)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -140,7 +146,10 @@ func (j *jsiiProxy_SchemaPolicyList) SetInternalValue(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_SchemaPolicyList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_SchemaPolicyList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -148,7 +157,10 @@ func (j *jsiiProxy_SchemaPolicyList) SetTerraformAttribute(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SchemaPolicyList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_SchemaPolicyList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -156,7 +168,10 @@ func (j *jsiiProxy_SchemaPolicyList) SetTerraformResource(val cdktf.IInterpolati
 	)
 }
 
-func (j *jsiiProxy_SchemaPolicyList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_SchemaPolicyList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -178,6 +193,9 @@ func (s *jsiiProxy_SchemaPolicyList) ComputeFqn() *string {
 }
 
 func (s *jsiiProxy_SchemaPolicyList) Get(index *float64) SchemaPolicyOutputReference {
+	if err := s.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns SchemaPolicyOutputReference
 
 	_jsii_.Invoke(
@@ -191,6 +209,9 @@ func (s *jsiiProxy_SchemaPolicyList) Get(index *float64) SchemaPolicyOutputRefer
 }
 
 func (s *jsiiProxy_SchemaPolicyList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := s.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

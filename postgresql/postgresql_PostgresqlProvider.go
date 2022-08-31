@@ -593,6 +593,9 @@ func (j *jsiiProxy_PostgresqlProvider) UsernameInput() *string {
 func NewPostgresqlProvider(scope constructs.Construct, id *string, config *PostgresqlProviderConfig) PostgresqlProvider {
 	_init_.Initialize()
 
+	if err := validateNewPostgresqlProviderParameters(scope, id, config); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_PostgresqlProvider{}
 
 	_jsii_.Create(
@@ -615,7 +618,7 @@ func NewPostgresqlProvider_Override(p PostgresqlProvider, scope constructs.Const
 	)
 }
 
-func (j *jsiiProxy_PostgresqlProvider) SetAlias(val *string) {
+func (j *jsiiProxy_PostgresqlProvider)SetAlias(val *string) {
 	_jsii_.Set(
 		j,
 		"alias",
@@ -623,7 +626,10 @@ func (j *jsiiProxy_PostgresqlProvider) SetAlias(val *string) {
 	)
 }
 
-func (j *jsiiProxy_PostgresqlProvider) SetAwsRdsIamAuth(val interface{}) {
+func (j *jsiiProxy_PostgresqlProvider)SetAwsRdsIamAuth(val interface{}) {
+	if err := j.validateSetAwsRdsIamAuthParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"awsRdsIamAuth",
@@ -631,7 +637,7 @@ func (j *jsiiProxy_PostgresqlProvider) SetAwsRdsIamAuth(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_PostgresqlProvider) SetAwsRdsIamProfile(val *string) {
+func (j *jsiiProxy_PostgresqlProvider)SetAwsRdsIamProfile(val *string) {
 	_jsii_.Set(
 		j,
 		"awsRdsIamProfile",
@@ -639,7 +645,10 @@ func (j *jsiiProxy_PostgresqlProvider) SetAwsRdsIamProfile(val *string) {
 	)
 }
 
-func (j *jsiiProxy_PostgresqlProvider) SetClientcert(val *PostgresqlProviderClientcert) {
+func (j *jsiiProxy_PostgresqlProvider)SetClientcert(val *PostgresqlProviderClientcert) {
+	if err := j.validateSetClientcertParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"clientcert",
@@ -647,7 +656,7 @@ func (j *jsiiProxy_PostgresqlProvider) SetClientcert(val *PostgresqlProviderClie
 	)
 }
 
-func (j *jsiiProxy_PostgresqlProvider) SetConnectTimeout(val *float64) {
+func (j *jsiiProxy_PostgresqlProvider)SetConnectTimeout(val *float64) {
 	_jsii_.Set(
 		j,
 		"connectTimeout",
@@ -655,7 +664,7 @@ func (j *jsiiProxy_PostgresqlProvider) SetConnectTimeout(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_PostgresqlProvider) SetDatabase(val *string) {
+func (j *jsiiProxy_PostgresqlProvider)SetDatabase(val *string) {
 	_jsii_.Set(
 		j,
 		"database",
@@ -663,7 +672,7 @@ func (j *jsiiProxy_PostgresqlProvider) SetDatabase(val *string) {
 	)
 }
 
-func (j *jsiiProxy_PostgresqlProvider) SetDatabaseUsername(val *string) {
+func (j *jsiiProxy_PostgresqlProvider)SetDatabaseUsername(val *string) {
 	_jsii_.Set(
 		j,
 		"databaseUsername",
@@ -671,7 +680,7 @@ func (j *jsiiProxy_PostgresqlProvider) SetDatabaseUsername(val *string) {
 	)
 }
 
-func (j *jsiiProxy_PostgresqlProvider) SetExpectedVersion(val *string) {
+func (j *jsiiProxy_PostgresqlProvider)SetExpectedVersion(val *string) {
 	_jsii_.Set(
 		j,
 		"expectedVersion",
@@ -679,7 +688,7 @@ func (j *jsiiProxy_PostgresqlProvider) SetExpectedVersion(val *string) {
 	)
 }
 
-func (j *jsiiProxy_PostgresqlProvider) SetHost(val *string) {
+func (j *jsiiProxy_PostgresqlProvider)SetHost(val *string) {
 	_jsii_.Set(
 		j,
 		"host",
@@ -687,7 +696,7 @@ func (j *jsiiProxy_PostgresqlProvider) SetHost(val *string) {
 	)
 }
 
-func (j *jsiiProxy_PostgresqlProvider) SetMaxConnections(val *float64) {
+func (j *jsiiProxy_PostgresqlProvider)SetMaxConnections(val *float64) {
 	_jsii_.Set(
 		j,
 		"maxConnections",
@@ -695,7 +704,7 @@ func (j *jsiiProxy_PostgresqlProvider) SetMaxConnections(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_PostgresqlProvider) SetPassword(val *string) {
+func (j *jsiiProxy_PostgresqlProvider)SetPassword(val *string) {
 	_jsii_.Set(
 		j,
 		"password",
@@ -703,7 +712,7 @@ func (j *jsiiProxy_PostgresqlProvider) SetPassword(val *string) {
 	)
 }
 
-func (j *jsiiProxy_PostgresqlProvider) SetPort(val *float64) {
+func (j *jsiiProxy_PostgresqlProvider)SetPort(val *float64) {
 	_jsii_.Set(
 		j,
 		"port",
@@ -711,7 +720,7 @@ func (j *jsiiProxy_PostgresqlProvider) SetPort(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_PostgresqlProvider) SetScheme(val *string) {
+func (j *jsiiProxy_PostgresqlProvider)SetScheme(val *string) {
 	_jsii_.Set(
 		j,
 		"scheme",
@@ -719,7 +728,7 @@ func (j *jsiiProxy_PostgresqlProvider) SetScheme(val *string) {
 	)
 }
 
-func (j *jsiiProxy_PostgresqlProvider) SetSslmode(val *string) {
+func (j *jsiiProxy_PostgresqlProvider)SetSslmode(val *string) {
 	_jsii_.Set(
 		j,
 		"sslmode",
@@ -727,7 +736,7 @@ func (j *jsiiProxy_PostgresqlProvider) SetSslmode(val *string) {
 	)
 }
 
-func (j *jsiiProxy_PostgresqlProvider) SetSslMode(val *string) {
+func (j *jsiiProxy_PostgresqlProvider)SetSslMode(val *string) {
 	_jsii_.Set(
 		j,
 		"sslMode",
@@ -735,7 +744,7 @@ func (j *jsiiProxy_PostgresqlProvider) SetSslMode(val *string) {
 	)
 }
 
-func (j *jsiiProxy_PostgresqlProvider) SetSslrootcert(val *string) {
+func (j *jsiiProxy_PostgresqlProvider)SetSslrootcert(val *string) {
 	_jsii_.Set(
 		j,
 		"sslrootcert",
@@ -743,7 +752,10 @@ func (j *jsiiProxy_PostgresqlProvider) SetSslrootcert(val *string) {
 	)
 }
 
-func (j *jsiiProxy_PostgresqlProvider) SetSuperuser(val interface{}) {
+func (j *jsiiProxy_PostgresqlProvider)SetSuperuser(val interface{}) {
+	if err := j.validateSetSuperuserParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"superuser",
@@ -751,7 +763,7 @@ func (j *jsiiProxy_PostgresqlProvider) SetSuperuser(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_PostgresqlProvider) SetUsername(val *string) {
+func (j *jsiiProxy_PostgresqlProvider)SetUsername(val *string) {
 	_jsii_.Set(
 		j,
 		"username",
@@ -779,6 +791,9 @@ func (j *jsiiProxy_PostgresqlProvider) SetUsername(val *string) {
 func PostgresqlProvider_IsConstruct(x interface{}) *bool {
 	_init_.Initialize()
 
+	if err := validatePostgresqlProvider_IsConstructParameters(x); err != nil {
+		panic(err)
+	}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
@@ -803,6 +818,9 @@ func PostgresqlProvider_TfResourceType() *string {
 }
 
 func (p *jsiiProxy_PostgresqlProvider) AddOverride(path *string, value interface{}) {
+	if err := p.validateAddOverrideParameters(path, value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		p,
 		"addOverride",
@@ -811,6 +829,9 @@ func (p *jsiiProxy_PostgresqlProvider) AddOverride(path *string, value interface
 }
 
 func (p *jsiiProxy_PostgresqlProvider) OverrideLogicalId(newLogicalId *string) {
+	if err := p.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		p,
 		"overrideLogicalId",

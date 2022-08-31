@@ -454,6 +454,9 @@ func (j *jsiiProxy_DefaultPrivileges) WithGrantOptionInput() interface{} {
 func NewDefaultPrivileges(scope constructs.Construct, id *string, config *DefaultPrivilegesConfig) DefaultPrivileges {
 	_init_.Initialize()
 
+	if err := validateNewDefaultPrivilegesParameters(scope, id, config); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_DefaultPrivileges{}
 
 	_jsii_.Create(
@@ -476,7 +479,10 @@ func NewDefaultPrivileges_Override(d DefaultPrivileges, scope constructs.Constru
 	)
 }
 
-func (j *jsiiProxy_DefaultPrivileges) SetConnection(val interface{}) {
+func (j *jsiiProxy_DefaultPrivileges)SetConnection(val interface{}) {
+	if err := j.validateSetConnectionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"connection",
@@ -484,7 +490,7 @@ func (j *jsiiProxy_DefaultPrivileges) SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DefaultPrivileges) SetCount(val *float64) {
+func (j *jsiiProxy_DefaultPrivileges)SetCount(val *float64) {
 	_jsii_.Set(
 		j,
 		"count",
@@ -492,7 +498,10 @@ func (j *jsiiProxy_DefaultPrivileges) SetCount(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_DefaultPrivileges) SetDatabase(val *string) {
+func (j *jsiiProxy_DefaultPrivileges)SetDatabase(val *string) {
+	if err := j.validateSetDatabaseParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"database",
@@ -500,7 +509,7 @@ func (j *jsiiProxy_DefaultPrivileges) SetDatabase(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DefaultPrivileges) SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_DefaultPrivileges)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -508,7 +517,7 @@ func (j *jsiiProxy_DefaultPrivileges) SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_DefaultPrivileges) SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DefaultPrivileges)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -516,7 +525,10 @@ func (j *jsiiProxy_DefaultPrivileges) SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_DefaultPrivileges) SetId(val *string) {
+func (j *jsiiProxy_DefaultPrivileges)SetId(val *string) {
+	if err := j.validateSetIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"id",
@@ -524,7 +536,10 @@ func (j *jsiiProxy_DefaultPrivileges) SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DefaultPrivileges) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DefaultPrivileges)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+	if err := j.validateSetLifecycleParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"lifecycle",
@@ -532,7 +547,10 @@ func (j *jsiiProxy_DefaultPrivileges) SetLifecycle(val *cdktf.TerraformResourceL
 	)
 }
 
-func (j *jsiiProxy_DefaultPrivileges) SetObjectType(val *string) {
+func (j *jsiiProxy_DefaultPrivileges)SetObjectType(val *string) {
+	if err := j.validateSetObjectTypeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"objectType",
@@ -540,7 +558,10 @@ func (j *jsiiProxy_DefaultPrivileges) SetObjectType(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DefaultPrivileges) SetOwner(val *string) {
+func (j *jsiiProxy_DefaultPrivileges)SetOwner(val *string) {
+	if err := j.validateSetOwnerParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"owner",
@@ -548,7 +569,10 @@ func (j *jsiiProxy_DefaultPrivileges) SetOwner(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DefaultPrivileges) SetPrivileges(val *[]*string) {
+func (j *jsiiProxy_DefaultPrivileges)SetPrivileges(val *[]*string) {
+	if err := j.validateSetPrivilegesParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"privileges",
@@ -556,7 +580,7 @@ func (j *jsiiProxy_DefaultPrivileges) SetPrivileges(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_DefaultPrivileges) SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DefaultPrivileges)SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -564,7 +588,10 @@ func (j *jsiiProxy_DefaultPrivileges) SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_DefaultPrivileges) SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_DefaultPrivileges)SetProvisioners(val *[]interface{}) {
+	if err := j.validateSetProvisionersParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"provisioners",
@@ -572,7 +599,10 @@ func (j *jsiiProxy_DefaultPrivileges) SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DefaultPrivileges) SetRole(val *string) {
+func (j *jsiiProxy_DefaultPrivileges)SetRole(val *string) {
+	if err := j.validateSetRoleParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"role",
@@ -580,7 +610,10 @@ func (j *jsiiProxy_DefaultPrivileges) SetRole(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DefaultPrivileges) SetSchema(val *string) {
+func (j *jsiiProxy_DefaultPrivileges)SetSchema(val *string) {
+	if err := j.validateSetSchemaParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"schema",
@@ -588,7 +621,10 @@ func (j *jsiiProxy_DefaultPrivileges) SetSchema(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DefaultPrivileges) SetWithGrantOption(val interface{}) {
+func (j *jsiiProxy_DefaultPrivileges)SetWithGrantOption(val interface{}) {
+	if err := j.validateSetWithGrantOptionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"withGrantOption",
@@ -616,6 +652,9 @@ func (j *jsiiProxy_DefaultPrivileges) SetWithGrantOption(val interface{}) {
 func DefaultPrivileges_IsConstruct(x interface{}) *bool {
 	_init_.Initialize()
 
+	if err := validateDefaultPrivileges_IsConstructParameters(x); err != nil {
+		panic(err)
+	}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
@@ -640,6 +679,9 @@ func DefaultPrivileges_TfResourceType() *string {
 }
 
 func (d *jsiiProxy_DefaultPrivileges) AddOverride(path *string, value interface{}) {
+	if err := d.validateAddOverrideParameters(path, value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		d,
 		"addOverride",
@@ -648,6 +690,9 @@ func (d *jsiiProxy_DefaultPrivileges) AddOverride(path *string, value interface{
 }
 
 func (d *jsiiProxy_DefaultPrivileges) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -661,6 +706,9 @@ func (d *jsiiProxy_DefaultPrivileges) GetAnyMapAttribute(terraformAttribute *str
 }
 
 func (d *jsiiProxy_DefaultPrivileges) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -674,6 +722,9 @@ func (d *jsiiProxy_DefaultPrivileges) GetBooleanAttribute(terraformAttribute *st
 }
 
 func (d *jsiiProxy_DefaultPrivileges) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := d.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -687,6 +738,9 @@ func (d *jsiiProxy_DefaultPrivileges) GetBooleanMapAttribute(terraformAttribute 
 }
 
 func (d *jsiiProxy_DefaultPrivileges) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := d.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -700,6 +754,9 @@ func (d *jsiiProxy_DefaultPrivileges) GetListAttribute(terraformAttribute *strin
 }
 
 func (d *jsiiProxy_DefaultPrivileges) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := d.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -713,6 +770,9 @@ func (d *jsiiProxy_DefaultPrivileges) GetNumberAttribute(terraformAttribute *str
 }
 
 func (d *jsiiProxy_DefaultPrivileges) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := d.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -726,6 +786,9 @@ func (d *jsiiProxy_DefaultPrivileges) GetNumberListAttribute(terraformAttribute 
 }
 
 func (d *jsiiProxy_DefaultPrivileges) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := d.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -739,6 +802,9 @@ func (d *jsiiProxy_DefaultPrivileges) GetNumberMapAttribute(terraformAttribute *
 }
 
 func (d *jsiiProxy_DefaultPrivileges) GetStringAttribute(terraformAttribute *string) *string {
+	if err := d.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -752,6 +818,9 @@ func (d *jsiiProxy_DefaultPrivileges) GetStringAttribute(terraformAttribute *str
 }
 
 func (d *jsiiProxy_DefaultPrivileges) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := d.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -765,6 +834,9 @@ func (d *jsiiProxy_DefaultPrivileges) GetStringMapAttribute(terraformAttribute *
 }
 
 func (d *jsiiProxy_DefaultPrivileges) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -778,6 +850,9 @@ func (d *jsiiProxy_DefaultPrivileges) InterpolationForAttribute(terraformAttribu
 }
 
 func (d *jsiiProxy_DefaultPrivileges) OverrideLogicalId(newLogicalId *string) {
+	if err := d.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		d,
 		"overrideLogicalId",
