@@ -1,5 +1,4 @@
 //go:build no_runtime_type_checking
-// +build no_runtime_type_checking
 
 package grant
 
@@ -54,6 +53,14 @@ func (g *jsiiProxy_Grant) validateOverrideLogicalIdParameters(newLogicalId *stri
 }
 
 func validateGrant_IsConstructParameters(x interface{}) error {
+	return nil
+}
+
+func validateGrant_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateGrant_IsTerraformResourceParameters(x interface{}) error {
 	return nil
 }
 

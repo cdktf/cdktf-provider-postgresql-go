@@ -1,5 +1,4 @@
 //go:build no_runtime_type_checking
-// +build no_runtime_type_checking
 
 package physicalreplicationslot
 
@@ -54,6 +53,14 @@ func (p *jsiiProxy_PhysicalReplicationSlot) validateOverrideLogicalIdParameters(
 }
 
 func validatePhysicalReplicationSlot_IsConstructParameters(x interface{}) error {
+	return nil
+}
+
+func validatePhysicalReplicationSlot_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validatePhysicalReplicationSlot_IsTerraformResourceParameters(x interface{}) error {
 	return nil
 }
 

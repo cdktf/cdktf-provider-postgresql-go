@@ -1,5 +1,4 @@
 //go:build no_runtime_type_checking
-// +build no_runtime_type_checking
 
 package provider
 
@@ -14,6 +13,14 @@ func (p *jsiiProxy_PostgresqlProvider) validateOverrideLogicalIdParameters(newLo
 }
 
 func validatePostgresqlProvider_IsConstructParameters(x interface{}) error {
+	return nil
+}
+
+func validatePostgresqlProvider_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validatePostgresqlProvider_IsTerraformProviderParameters(x interface{}) error {
 	return nil
 }
 

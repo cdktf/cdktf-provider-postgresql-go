@@ -1,5 +1,4 @@
 //go:build no_runtime_type_checking
-// +build no_runtime_type_checking
 
 package database
 
@@ -54,6 +53,14 @@ func (d *jsiiProxy_Database) validateOverrideLogicalIdParameters(newLogicalId *s
 }
 
 func validateDatabase_IsConstructParameters(x interface{}) error {
+	return nil
+}
+
+func validateDatabase_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateDatabase_IsTerraformResourceParameters(x interface{}) error {
 	return nil
 }
 

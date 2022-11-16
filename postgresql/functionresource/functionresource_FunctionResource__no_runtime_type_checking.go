@@ -1,5 +1,4 @@
 //go:build no_runtime_type_checking
-// +build no_runtime_type_checking
 
 package functionresource
 
@@ -58,6 +57,14 @@ func (f *jsiiProxy_FunctionResource) validatePutArgParameters(value interface{})
 }
 
 func validateFunctionResource_IsConstructParameters(x interface{}) error {
+	return nil
+}
+
+func validateFunctionResource_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateFunctionResource_IsTerraformResourceParameters(x interface{}) error {
 	return nil
 }
 

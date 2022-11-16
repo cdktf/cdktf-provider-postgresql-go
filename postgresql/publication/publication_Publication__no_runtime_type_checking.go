@@ -1,5 +1,4 @@
 //go:build no_runtime_type_checking
-// +build no_runtime_type_checking
 
 package publication
 
@@ -54,6 +53,14 @@ func (p *jsiiProxy_Publication) validateOverrideLogicalIdParameters(newLogicalId
 }
 
 func validatePublication_IsConstructParameters(x interface{}) error {
+	return nil
+}
+
+func validatePublication_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validatePublication_IsTerraformResourceParameters(x interface{}) error {
 	return nil
 }
 

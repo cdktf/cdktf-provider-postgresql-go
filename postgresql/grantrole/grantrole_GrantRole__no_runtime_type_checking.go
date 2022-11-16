@@ -1,5 +1,4 @@
 //go:build no_runtime_type_checking
-// +build no_runtime_type_checking
 
 package grantrole
 
@@ -54,6 +53,14 @@ func (g *jsiiProxy_GrantRole) validateOverrideLogicalIdParameters(newLogicalId *
 }
 
 func validateGrantRole_IsConstructParameters(x interface{}) error {
+	return nil
+}
+
+func validateGrantRole_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateGrantRole_IsTerraformResourceParameters(x interface{}) error {
 	return nil
 }
 
