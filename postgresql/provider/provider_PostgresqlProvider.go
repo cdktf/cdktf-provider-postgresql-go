@@ -21,6 +21,9 @@ type PostgresqlProvider interface {
 	AwsRdsIamProfile() *string
 	SetAwsRdsIamProfile(val *string)
 	AwsRdsIamProfileInput() *string
+	AwsRdsIamRegion() *string
+	SetAwsRdsIamRegion(val *string)
+	AwsRdsIamRegionInput() *string
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	Clientcert() *PostgresqlProviderClientcert
@@ -94,6 +97,7 @@ type PostgresqlProvider interface {
 	ResetAlias()
 	ResetAwsRdsIamAuth()
 	ResetAwsRdsIamProfile()
+	ResetAwsRdsIamRegion()
 	ResetClientcert()
 	ResetConnectTimeout()
 	ResetDatabase()
@@ -182,6 +186,26 @@ func (j *jsiiProxy_PostgresqlProvider) AwsRdsIamProfileInput() *string {
 	_jsii_.Get(
 		j,
 		"awsRdsIamProfileInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PostgresqlProvider) AwsRdsIamRegion() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"awsRdsIamRegion",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PostgresqlProvider) AwsRdsIamRegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"awsRdsIamRegionInput",
 		&returns,
 	)
 	return returns
@@ -644,6 +668,14 @@ func (j *jsiiProxy_PostgresqlProvider)SetAwsRdsIamProfile(val *string) {
 	)
 }
 
+func (j *jsiiProxy_PostgresqlProvider)SetAwsRdsIamRegion(val *string) {
+	_jsii_.Set(
+		j,
+		"awsRdsIamRegion",
+		val,
+	)
+}
+
 func (j *jsiiProxy_PostgresqlProvider)SetClientcert(val *PostgresqlProviderClientcert) {
 	if err := j.validateSetClientcertParameters(val); err != nil {
 		panic(err)
@@ -896,6 +928,14 @@ func (p *jsiiProxy_PostgresqlProvider) ResetAwsRdsIamProfile() {
 	_jsii_.InvokeVoid(
 		p,
 		"resetAwsRdsIamProfile",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PostgresqlProvider) ResetAwsRdsIamRegion() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetAwsRdsIamRegion",
 		nil, // no parameters
 	)
 }

@@ -23,7 +23,7 @@ type DefaultPrivilegesConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/default_privileges#database DefaultPrivileges#database}
 	Database *string `field:"required" json:"database" yaml:"database"`
-	// The PostgreSQL object type to set the default privileges on (one of: table, sequence, function, type).
+	// The PostgreSQL object type to set the default privileges on (one of: table, sequence, function, type, schema).
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/default_privileges#object_type DefaultPrivileges#object_type}
 	ObjectType *string `field:"required" json:"objectType" yaml:"objectType"`

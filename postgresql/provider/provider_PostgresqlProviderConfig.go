@@ -14,6 +14,10 @@ type PostgresqlProviderConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql#aws_rds_iam_profile PostgresqlProvider#aws_rds_iam_profile}
 	AwsRdsIamProfile *string `field:"optional" json:"awsRdsIamProfile" yaml:"awsRdsIamProfile"`
+	// AWS region to use for IAM auth.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql#aws_rds_iam_region PostgresqlProvider#aws_rds_iam_region}
+	AwsRdsIamRegion *string `field:"optional" json:"awsRdsIamRegion" yaml:"awsRdsIamRegion"`
 	// clientcert block.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql#clientcert PostgresqlProvider#clientcert}
