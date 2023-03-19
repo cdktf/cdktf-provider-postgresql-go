@@ -23,7 +23,7 @@ type GrantConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/grant#database Grant#database}
 	Database *string `field:"required" json:"database" yaml:"database"`
-	// The PostgreSQL object type to grant the privileges on (one of: database, function, procedure, routine, schema, sequence, table, foreign_data_wrapper, foreign_server).
+	// The PostgreSQL object type to grant the privileges on (one of: database, function, procedure, routine, schema, sequence, table, foreign_data_wrapper, foreign_server, column).
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/grant#object_type Grant#object_type}
 	ObjectType *string `field:"required" json:"objectType" yaml:"objectType"`
@@ -35,6 +35,10 @@ type GrantConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/grant#role Grant#role}
 	Role *string `field:"required" json:"role" yaml:"role"`
+	// The specific columns to grant privileges on for this role.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/grant#columns Grant#columns}
+	Columns *[]*string `field:"optional" json:"columns" yaml:"columns"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/postgresql/r/grant#id Grant#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.

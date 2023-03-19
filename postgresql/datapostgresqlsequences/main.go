@@ -1,4 +1,4 @@
-package functionresource
+package datapostgresqlsequences
 
 import (
 	"reflect"
@@ -8,23 +8,16 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-postgresql.functionResource.FunctionResource",
-		reflect.TypeOf((*FunctionResource)(nil)).Elem(),
+		"@cdktf/provider-postgresql.dataPostgresqlSequences.DataPostgresqlSequences",
+		reflect.TypeOf((*DataPostgresqlSequences)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
-			_jsii_.MemberProperty{JsiiProperty: "arg", GoGetter: "Arg"},
-			_jsii_.MemberProperty{JsiiProperty: "argInput", GoGetter: "ArgInput"},
-			_jsii_.MemberProperty{JsiiProperty: "body", GoGetter: "Body"},
-			_jsii_.MemberProperty{JsiiProperty: "bodyInput", GoGetter: "BodyInput"},
 			_jsii_.MemberProperty{JsiiProperty: "cdktfStack", GoGetter: "CdktfStack"},
-			_jsii_.MemberProperty{JsiiProperty: "connection", GoGetter: "Connection"},
 			_jsii_.MemberProperty{JsiiProperty: "constructNodeMetadata", GoGetter: "ConstructNodeMetadata"},
 			_jsii_.MemberProperty{JsiiProperty: "count", GoGetter: "Count"},
 			_jsii_.MemberProperty{JsiiProperty: "database", GoGetter: "Database"},
 			_jsii_.MemberProperty{JsiiProperty: "databaseInput", GoGetter: "DatabaseInput"},
 			_jsii_.MemberProperty{JsiiProperty: "dependsOn", GoGetter: "DependsOn"},
-			_jsii_.MemberProperty{JsiiProperty: "dropCascade", GoGetter: "DropCascade"},
-			_jsii_.MemberProperty{JsiiProperty: "dropCascadeInput", GoGetter: "DropCascadeInput"},
 			_jsii_.MemberProperty{JsiiProperty: "forEach", GoGetter: "ForEach"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
 			_jsii_.MemberProperty{JsiiProperty: "friendlyUniqueId", GoGetter: "FriendlyUniqueId"},
@@ -41,25 +34,28 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "idInput", GoGetter: "IdInput"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "lifecycle", GoGetter: "Lifecycle"},
-			_jsii_.MemberProperty{JsiiProperty: "name", GoGetter: "Name"},
-			_jsii_.MemberProperty{JsiiProperty: "nameInput", GoGetter: "NameInput"},
+			_jsii_.MemberProperty{JsiiProperty: "likeAllPatterns", GoGetter: "LikeAllPatterns"},
+			_jsii_.MemberProperty{JsiiProperty: "likeAllPatternsInput", GoGetter: "LikeAllPatternsInput"},
+			_jsii_.MemberProperty{JsiiProperty: "likeAnyPatterns", GoGetter: "LikeAnyPatterns"},
+			_jsii_.MemberProperty{JsiiProperty: "likeAnyPatternsInput", GoGetter: "LikeAnyPatternsInput"},
 			_jsii_.MemberProperty{JsiiProperty: "node", GoGetter: "Node"},
+			_jsii_.MemberProperty{JsiiProperty: "notLikeAllPatterns", GoGetter: "NotLikeAllPatterns"},
+			_jsii_.MemberProperty{JsiiProperty: "notLikeAllPatternsInput", GoGetter: "NotLikeAllPatternsInput"},
 			_jsii_.MemberMethod{JsiiMethod: "overrideLogicalId", GoMethod: "OverrideLogicalId"},
 			_jsii_.MemberProperty{JsiiProperty: "provider", GoGetter: "Provider"},
-			_jsii_.MemberProperty{JsiiProperty: "provisioners", GoGetter: "Provisioners"},
-			_jsii_.MemberMethod{JsiiMethod: "putArg", GoMethod: "PutArg"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
-			_jsii_.MemberMethod{JsiiMethod: "resetArg", GoMethod: "ResetArg"},
-			_jsii_.MemberMethod{JsiiMethod: "resetDatabase", GoMethod: "ResetDatabase"},
-			_jsii_.MemberMethod{JsiiMethod: "resetDropCascade", GoMethod: "ResetDropCascade"},
+			_jsii_.MemberProperty{JsiiProperty: "regexPattern", GoGetter: "RegexPattern"},
+			_jsii_.MemberProperty{JsiiProperty: "regexPatternInput", GoGetter: "RegexPatternInput"},
 			_jsii_.MemberMethod{JsiiMethod: "resetId", GoMethod: "ResetId"},
+			_jsii_.MemberMethod{JsiiMethod: "resetLikeAllPatterns", GoMethod: "ResetLikeAllPatterns"},
+			_jsii_.MemberMethod{JsiiMethod: "resetLikeAnyPatterns", GoMethod: "ResetLikeAnyPatterns"},
+			_jsii_.MemberMethod{JsiiMethod: "resetNotLikeAllPatterns", GoMethod: "ResetNotLikeAllPatterns"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOverrideLogicalId", GoMethod: "ResetOverrideLogicalId"},
-			_jsii_.MemberMethod{JsiiMethod: "resetReturns", GoMethod: "ResetReturns"},
-			_jsii_.MemberMethod{JsiiMethod: "resetSchema", GoMethod: "ResetSchema"},
-			_jsii_.MemberProperty{JsiiProperty: "returns", GoGetter: "Returns"},
-			_jsii_.MemberProperty{JsiiProperty: "returnsInput", GoGetter: "ReturnsInput"},
-			_jsii_.MemberProperty{JsiiProperty: "schema", GoGetter: "Schema"},
-			_jsii_.MemberProperty{JsiiProperty: "schemaInput", GoGetter: "SchemaInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resetRegexPattern", GoMethod: "ResetRegexPattern"},
+			_jsii_.MemberMethod{JsiiMethod: "resetSchemas", GoMethod: "ResetSchemas"},
+			_jsii_.MemberProperty{JsiiProperty: "schemas", GoGetter: "Schemas"},
+			_jsii_.MemberProperty{JsiiProperty: "schemasInput", GoGetter: "SchemasInput"},
+			_jsii_.MemberProperty{JsiiProperty: "sequences", GoGetter: "Sequences"},
 			_jsii_.MemberMethod{JsiiMethod: "synthesizeAttributes", GoMethod: "SynthesizeAttributes"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformGeneratorMetadata", GoGetter: "TerraformGeneratorMetadata"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformMetaArguments", GoGetter: "TerraformMetaArguments"},
@@ -69,24 +65,27 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
 		func() interface{} {
-			j := jsiiProxy_FunctionResource{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			j := jsiiProxy_DataPostgresqlSequences{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformDataSource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-postgresql.functionResource.FunctionResourceArg",
-		reflect.TypeOf((*FunctionResourceArg)(nil)).Elem(),
+		"@cdktf/provider-postgresql.dataPostgresqlSequences.DataPostgresqlSequencesConfig",
+		reflect.TypeOf((*DataPostgresqlSequencesConfig)(nil)).Elem(),
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-postgresql.dataPostgresqlSequences.DataPostgresqlSequencesSequences",
+		reflect.TypeOf((*DataPostgresqlSequencesSequences)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-postgresql.functionResource.FunctionResourceArgList",
-		reflect.TypeOf((*FunctionResourceArgList)(nil)).Elem(),
+		"@cdktf/provider-postgresql.dataPostgresqlSequences.DataPostgresqlSequencesSequencesList",
+		reflect.TypeOf((*DataPostgresqlSequencesSequencesList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
 			_jsii_.MemberMethod{JsiiMethod: "get", GoMethod: "Get"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
@@ -94,21 +93,20 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
 		func() interface{} {
-			j := jsiiProxy_FunctionResourceArgList{}
+			j := jsiiProxy_DataPostgresqlSequencesSequencesList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-postgresql.functionResource.FunctionResourceArgOutputReference",
-		reflect.TypeOf((*FunctionResourceArgOutputReference)(nil)).Elem(),
+		"@cdktf/provider-postgresql.dataPostgresqlSequences.DataPostgresqlSequencesSequencesOutputReference",
+		reflect.TypeOf((*DataPostgresqlSequencesSequencesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "default", GoGetter: "Default"},
-			_jsii_.MemberProperty{JsiiProperty: "defaultInput", GoGetter: "DefaultInput"},
+			_jsii_.MemberProperty{JsiiProperty: "dataType", GoGetter: "DataType"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
 			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
@@ -122,28 +120,17 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "mode", GoGetter: "Mode"},
-			_jsii_.MemberProperty{JsiiProperty: "modeInput", GoGetter: "ModeInput"},
-			_jsii_.MemberProperty{JsiiProperty: "name", GoGetter: "Name"},
-			_jsii_.MemberProperty{JsiiProperty: "nameInput", GoGetter: "NameInput"},
-			_jsii_.MemberMethod{JsiiMethod: "resetDefault", GoMethod: "ResetDefault"},
-			_jsii_.MemberMethod{JsiiMethod: "resetMode", GoMethod: "ResetMode"},
-			_jsii_.MemberMethod{JsiiMethod: "resetName", GoMethod: "ResetName"},
+			_jsii_.MemberProperty{JsiiProperty: "objectName", GoGetter: "ObjectName"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "schemaName", GoGetter: "SchemaName"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
-			_jsii_.MemberProperty{JsiiProperty: "typeInput", GoGetter: "TypeInput"},
 		},
 		func() interface{} {
-			j := jsiiProxy_FunctionResourceArgOutputReference{}
+			j := jsiiProxy_DataPostgresqlSequencesSequencesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
 		},
-	)
-	_jsii_.RegisterStruct(
-		"@cdktf/provider-postgresql.functionResource.FunctionResourceConfig",
-		reflect.TypeOf((*FunctionResourceConfig)(nil)).Elem(),
 	)
 }

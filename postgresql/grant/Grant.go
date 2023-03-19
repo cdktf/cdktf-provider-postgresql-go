@@ -14,6 +14,9 @@ type Grant interface {
 	cdktf.TerraformResource
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
+	Columns() *[]*string
+	SetColumns(val *[]*string)
+	ColumnsInput() *[]*string
 	// Experimental.
 	Connection() interface{}
 	// Experimental.
@@ -107,6 +110,7 @@ type Grant interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	ResetColumns()
 	ResetId()
 	ResetObjects()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -134,6 +138,26 @@ func (j *jsiiProxy_Grant) CdktfStack() cdktf.TerraformStack {
 	_jsii_.Get(
 		j,
 		"cdktfStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Grant) Columns() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"columns",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Grant) ColumnsInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"columnsInput",
 		&returns,
 	)
 	return returns
@@ -476,6 +500,17 @@ func NewGrant_Override(g Grant, scope constructs.Construct, id *string, config *
 		"@cdktf/provider-postgresql.grant.Grant",
 		[]interface{}{scope, id, config},
 		g,
+	)
+}
+
+func (j *jsiiProxy_Grant)SetColumns(val *[]*string) {
+	if err := j.validateSetColumnsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"columns",
+		val,
 	)
 }
 
@@ -895,6 +930,14 @@ func (g *jsiiProxy_Grant) OverrideLogicalId(newLogicalId *string) {
 		g,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
+	)
+}
+
+func (g *jsiiProxy_Grant) ResetColumns() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetColumns",
+		nil, // no parameters
 	)
 }
 

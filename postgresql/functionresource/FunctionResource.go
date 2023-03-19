@@ -50,6 +50,9 @@ type FunctionResource interface {
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
+	Language() *string
+	SetLanguage(val *string)
+	LanguageInput() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -111,6 +114,7 @@ type FunctionResource interface {
 	ResetDatabase()
 	ResetDropCascade()
 	ResetId()
+	ResetLanguage()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -306,6 +310,26 @@ func (j *jsiiProxy_FunctionResource) IdInput() *string {
 	_jsii_.Get(
 		j,
 		"idInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_FunctionResource) Language() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"language",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_FunctionResource) LanguageInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"languageInput",
 		&returns,
 	)
 	return returns
@@ -556,6 +580,17 @@ func (j *jsiiProxy_FunctionResource)SetId(val *string) {
 	_jsii_.Set(
 		j,
 		"id",
+		val,
+	)
+}
+
+func (j *jsiiProxy_FunctionResource)SetLanguage(val *string) {
+	if err := j.validateSetLanguageParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"language",
 		val,
 	)
 }
@@ -928,6 +963,14 @@ func (f *jsiiProxy_FunctionResource) ResetId() {
 	_jsii_.InvokeVoid(
 		f,
 		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (f *jsiiProxy_FunctionResource) ResetLanguage() {
+	_jsii_.InvokeVoid(
+		f,
+		"resetLanguage",
 		nil, // no parameters
 	)
 }

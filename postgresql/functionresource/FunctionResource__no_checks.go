@@ -88,6 +88,10 @@ func (j *jsiiProxy_FunctionResource) validateSetIdParameters(val *string) error 
 	return nil
 }
 
+func (j *jsiiProxy_FunctionResource) validateSetLanguageParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_FunctionResource) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	return nil
 }
