@@ -64,6 +64,10 @@ func validateDataPostgresqlSequences_IsTerraformElementParameters(x interface{})
 	return nil
 }
 
+func (j *jsiiProxy_DataPostgresqlSequences) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataPostgresqlSequences) validateSetDatabaseParameters(val *string) error {
 	return nil
 }

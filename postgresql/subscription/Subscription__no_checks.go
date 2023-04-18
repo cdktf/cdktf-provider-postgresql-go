@@ -72,6 +72,10 @@ func (j *jsiiProxy_Subscription) validateSetConninfoParameters(val *string) erro
 	return nil
 }
 
+func (j *jsiiProxy_Subscription) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_Subscription) validateSetCreateSlotParameters(val interface{}) error {
 	return nil
 }

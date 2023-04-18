@@ -2,14 +2,14 @@ package subscription
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-postgresql-go/postgresql/v5/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-postgresql-go/postgresql/v6/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-postgresql-go/postgresql/v5/subscription/internal"
+	"github.com/cdktf/cdktf-provider-postgresql-go/postgresql/v6/subscription/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/postgresql/r/subscription postgresql_subscription}.
+// Represents a {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.19.0/docs/resources/subscription postgresql_subscription}.
 type Subscription interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -24,9 +24,9 @@ type Subscription interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	CreateSlot() interface{}
 	SetCreateSlot(val interface{})
 	CreateSlotInput() interface{}
@@ -176,8 +176,8 @@ func (j *jsiiProxy_Subscription) ConstructNodeMetadata() *map[string]interface{}
 	return returns
 }
 
-func (j *jsiiProxy_Subscription) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_Subscription) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -427,7 +427,7 @@ func (j *jsiiProxy_Subscription) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/postgresql/r/subscription postgresql_subscription} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.19.0/docs/resources/subscription postgresql_subscription} Resource.
 func NewSubscription(scope constructs.Construct, id *string, config *SubscriptionConfig) Subscription {
 	_init_.Initialize()
 
@@ -445,7 +445,7 @@ func NewSubscription(scope constructs.Construct, id *string, config *Subscriptio
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/postgresql/r/subscription postgresql_subscription} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.19.0/docs/resources/subscription postgresql_subscription} Resource.
 func NewSubscription_Override(s Subscription, scope constructs.Construct, id *string, config *SubscriptionConfig) {
 	_init_.Initialize()
 
@@ -478,7 +478,10 @@ func (j *jsiiProxy_Subscription)SetConninfo(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Subscription)SetCount(val *float64) {
+func (j *jsiiProxy_Subscription)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

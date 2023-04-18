@@ -80,6 +80,10 @@ func (j *jsiiProxy_Role) validateSetConnectionLimitParameters(val *float64) erro
 	return nil
 }
 
+func (j *jsiiProxy_Role) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_Role) validateSetCreateDatabaseParameters(val interface{}) error {
 	return nil
 }

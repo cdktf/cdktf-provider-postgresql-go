@@ -68,6 +68,10 @@ func (j *jsiiProxy_Extension) validateSetConnectionParameters(val interface{}) e
 	return nil
 }
 
+func (j *jsiiProxy_Extension) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_Extension) validateSetCreateCascadeParameters(val interface{}) error {
 	return nil
 }

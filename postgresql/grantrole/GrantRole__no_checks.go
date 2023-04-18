@@ -68,6 +68,10 @@ func (j *jsiiProxy_GrantRole) validateSetConnectionParameters(val interface{}) e
 	return nil
 }
 
+func (j *jsiiProxy_GrantRole) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GrantRole) validateSetGrantRoleParameters(val *string) error {
 	return nil
 }

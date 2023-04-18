@@ -2,14 +2,14 @@ package datapostgresqlschemas
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-postgresql-go/postgresql/v5/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-postgresql-go/postgresql/v6/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-postgresql-go/postgresql/v5/datapostgresqlschemas/internal"
+	"github.com/cdktf/cdktf-provider-postgresql-go/postgresql/v6/datapostgresqlschemas/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/postgresql/d/schemas postgresql_schemas}.
+// Represents a {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.19.0/docs/data-sources/schemas postgresql_schemas}.
 type DataPostgresqlSchemas interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -17,9 +17,9 @@ type DataPostgresqlSchemas interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	Database() *string
 	SetDatabase(val *string)
 	DatabaseInput() *string
@@ -141,8 +141,8 @@ func (j *jsiiProxy_DataPostgresqlSchemas) ConstructNodeMetadata() *map[string]in
 	return returns
 }
 
-func (j *jsiiProxy_DataPostgresqlSchemas) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataPostgresqlSchemas) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -412,7 +412,7 @@ func (j *jsiiProxy_DataPostgresqlSchemas) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/postgresql/d/schemas postgresql_schemas} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.19.0/docs/data-sources/schemas postgresql_schemas} Data Source.
 func NewDataPostgresqlSchemas(scope constructs.Construct, id *string, config *DataPostgresqlSchemasConfig) DataPostgresqlSchemas {
 	_init_.Initialize()
 
@@ -430,7 +430,7 @@ func NewDataPostgresqlSchemas(scope constructs.Construct, id *string, config *Da
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/postgresql/d/schemas postgresql_schemas} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.19.0/docs/data-sources/schemas postgresql_schemas} Data Source.
 func NewDataPostgresqlSchemas_Override(d DataPostgresqlSchemas, scope constructs.Construct, id *string, config *DataPostgresqlSchemasConfig) {
 	_init_.Initialize()
 
@@ -441,7 +441,10 @@ func NewDataPostgresqlSchemas_Override(d DataPostgresqlSchemas, scope constructs
 	)
 }
 
-func (j *jsiiProxy_DataPostgresqlSchemas)SetCount(val *float64) {
+func (j *jsiiProxy_DataPostgresqlSchemas)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

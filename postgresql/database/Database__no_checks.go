@@ -76,6 +76,10 @@ func (j *jsiiProxy_Database) validateSetConnectionLimitParameters(val *float64) 
 	return nil
 }
 
+func (j *jsiiProxy_Database) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_Database) validateSetEncodingParameters(val *string) error {
 	return nil
 }

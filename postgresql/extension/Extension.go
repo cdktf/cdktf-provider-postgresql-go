@@ -2,14 +2,14 @@ package extension
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-postgresql-go/postgresql/v5/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-postgresql-go/postgresql/v6/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-postgresql-go/postgresql/v5/extension/internal"
+	"github.com/cdktf/cdktf-provider-postgresql-go/postgresql/v6/extension/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/postgresql/r/extension postgresql_extension}.
+// Represents a {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.19.0/docs/resources/extension postgresql_extension}.
 type Extension interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -21,9 +21,9 @@ type Extension interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	CreateCascade() interface{}
 	SetCreateCascade(val interface{})
 	CreateCascadeInput() interface{}
@@ -158,8 +158,8 @@ func (j *jsiiProxy_Extension) ConstructNodeMetadata() *map[string]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_Extension) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_Extension) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -429,7 +429,7 @@ func (j *jsiiProxy_Extension) VersionInput() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/postgresql/r/extension postgresql_extension} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.19.0/docs/resources/extension postgresql_extension} Resource.
 func NewExtension(scope constructs.Construct, id *string, config *ExtensionConfig) Extension {
 	_init_.Initialize()
 
@@ -447,7 +447,7 @@ func NewExtension(scope constructs.Construct, id *string, config *ExtensionConfi
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/postgresql/r/extension postgresql_extension} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.19.0/docs/resources/extension postgresql_extension} Resource.
 func NewExtension_Override(e Extension, scope constructs.Construct, id *string, config *ExtensionConfig) {
 	_init_.Initialize()
 
@@ -469,7 +469,10 @@ func (j *jsiiProxy_Extension)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_Extension)SetCount(val *float64) {
+func (j *jsiiProxy_Extension)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

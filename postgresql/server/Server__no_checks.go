@@ -68,6 +68,10 @@ func (j *jsiiProxy_Server) validateSetConnectionParameters(val interface{}) erro
 	return nil
 }
 
+func (j *jsiiProxy_Server) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_Server) validateSetDropCascadeParameters(val interface{}) error {
 	return nil
 }

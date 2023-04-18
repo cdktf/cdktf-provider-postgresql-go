@@ -64,6 +64,10 @@ func validateDataPostgresqlSchemas_IsTerraformElementParameters(x interface{}) e
 	return nil
 }
 
+func (j *jsiiProxy_DataPostgresqlSchemas) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataPostgresqlSchemas) validateSetDatabaseParameters(val *string) error {
 	return nil
 }

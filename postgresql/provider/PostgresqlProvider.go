@@ -2,14 +2,14 @@ package provider
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-postgresql-go/postgresql/v5/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-postgresql-go/postgresql/v6/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-postgresql-go/postgresql/v5/provider/internal"
+	"github.com/cdktf/cdktf-provider-postgresql-go/postgresql/v6/provider/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/postgresql postgresql}.
+// Represents a {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.19.0/docs postgresql}.
 type PostgresqlProvider interface {
 	cdktf.TerraformProvider
 	Alias() *string
@@ -612,7 +612,7 @@ func (j *jsiiProxy_PostgresqlProvider) UsernameInput() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/postgresql postgresql} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.19.0/docs postgresql} Resource.
 func NewPostgresqlProvider(scope constructs.Construct, id *string, config *PostgresqlProviderConfig) PostgresqlProvider {
 	_init_.Initialize()
 
@@ -630,7 +630,7 @@ func NewPostgresqlProvider(scope constructs.Construct, id *string, config *Postg
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/postgresql postgresql} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.19.0/docs postgresql} Resource.
 func NewPostgresqlProvider_Override(p PostgresqlProvider, scope constructs.Construct, id *string, config *PostgresqlProviderConfig) {
 	_init_.Initialize()
 

@@ -2,14 +2,14 @@ package defaultprivileges
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-postgresql-go/postgresql/v5/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-postgresql-go/postgresql/v6/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-postgresql-go/postgresql/v5/defaultprivileges/internal"
+	"github.com/cdktf/cdktf-provider-postgresql-go/postgresql/v6/defaultprivileges/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/postgresql/r/default_privileges postgresql_default_privileges}.
+// Represents a {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.19.0/docs/resources/default_privileges postgresql_default_privileges}.
 type DefaultPrivileges interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -21,9 +21,9 @@ type DefaultPrivileges interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	Database() *string
 	SetDatabase(val *string)
 	DatabaseInput() *string
@@ -158,8 +158,8 @@ func (j *jsiiProxy_DefaultPrivileges) ConstructNodeMetadata() *map[string]interf
 	return returns
 }
 
-func (j *jsiiProxy_DefaultPrivileges) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DefaultPrivileges) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -449,7 +449,7 @@ func (j *jsiiProxy_DefaultPrivileges) WithGrantOptionInput() interface{} {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/postgresql/r/default_privileges postgresql_default_privileges} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.19.0/docs/resources/default_privileges postgresql_default_privileges} Resource.
 func NewDefaultPrivileges(scope constructs.Construct, id *string, config *DefaultPrivilegesConfig) DefaultPrivileges {
 	_init_.Initialize()
 
@@ -467,7 +467,7 @@ func NewDefaultPrivileges(scope constructs.Construct, id *string, config *Defaul
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/postgresql/r/default_privileges postgresql_default_privileges} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.19.0/docs/resources/default_privileges postgresql_default_privileges} Resource.
 func NewDefaultPrivileges_Override(d DefaultPrivileges, scope constructs.Construct, id *string, config *DefaultPrivilegesConfig) {
 	_init_.Initialize()
 
@@ -489,7 +489,10 @@ func (j *jsiiProxy_DefaultPrivileges)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DefaultPrivileges)SetCount(val *float64) {
+func (j *jsiiProxy_DefaultPrivileges)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

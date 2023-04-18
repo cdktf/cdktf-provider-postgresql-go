@@ -2,14 +2,14 @@ package usermapping
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-postgresql-go/postgresql/v5/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-postgresql-go/postgresql/v6/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-postgresql-go/postgresql/v5/usermapping/internal"
+	"github.com/cdktf/cdktf-provider-postgresql-go/postgresql/v6/usermapping/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/postgresql/r/user_mapping postgresql_user_mapping}.
+// Represents a {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.19.0/docs/resources/user_mapping postgresql_user_mapping}.
 type UserMapping interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -21,9 +21,9 @@ type UserMapping interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -145,8 +145,8 @@ func (j *jsiiProxy_UserMapping) ConstructNodeMetadata() *map[string]interface{} 
 	return returns
 }
 
-func (j *jsiiProxy_UserMapping) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_UserMapping) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -356,7 +356,7 @@ func (j *jsiiProxy_UserMapping) UserNameInput() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/postgresql/r/user_mapping postgresql_user_mapping} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.19.0/docs/resources/user_mapping postgresql_user_mapping} Resource.
 func NewUserMapping(scope constructs.Construct, id *string, config *UserMappingConfig) UserMapping {
 	_init_.Initialize()
 
@@ -374,7 +374,7 @@ func NewUserMapping(scope constructs.Construct, id *string, config *UserMappingC
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/postgresql/r/user_mapping postgresql_user_mapping} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.19.0/docs/resources/user_mapping postgresql_user_mapping} Resource.
 func NewUserMapping_Override(u UserMapping, scope constructs.Construct, id *string, config *UserMappingConfig) {
 	_init_.Initialize()
 
@@ -396,7 +396,10 @@ func (j *jsiiProxy_UserMapping)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_UserMapping)SetCount(val *float64) {
+func (j *jsiiProxy_UserMapping)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

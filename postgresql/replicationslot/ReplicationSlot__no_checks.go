@@ -68,6 +68,10 @@ func (j *jsiiProxy_ReplicationSlot) validateSetConnectionParameters(val interfac
 	return nil
 }
 
+func (j *jsiiProxy_ReplicationSlot) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ReplicationSlot) validateSetDatabaseParameters(val *string) error {
 	return nil
 }
