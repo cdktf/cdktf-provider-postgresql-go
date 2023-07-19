@@ -2,14 +2,14 @@ package defaultprivileges
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-postgresql-go/postgresql/v7/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-postgresql-go/postgresql/v8/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-postgresql-go/postgresql/v7/defaultprivileges/internal"
+	"github.com/cdktf/cdktf-provider-postgresql-go/postgresql/v8/defaultprivileges/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.19.0/docs/resources/default_privileges postgresql_default_privileges}.
+// Represents a {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.20.0/docs/resources/default_privileges postgresql_default_privileges}.
 type DefaultPrivileges interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -449,7 +449,7 @@ func (j *jsiiProxy_DefaultPrivileges) WithGrantOptionInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.19.0/docs/resources/default_privileges postgresql_default_privileges} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.20.0/docs/resources/default_privileges postgresql_default_privileges} Resource.
 func NewDefaultPrivileges(scope constructs.Construct, id *string, config *DefaultPrivilegesConfig) DefaultPrivileges {
 	_init_.Initialize()
 
@@ -467,7 +467,7 @@ func NewDefaultPrivileges(scope constructs.Construct, id *string, config *Defaul
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.19.0/docs/resources/default_privileges postgresql_default_privileges} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.20.0/docs/resources/default_privileges postgresql_default_privileges} Resource.
 func NewDefaultPrivileges_Override(d DefaultPrivileges, scope constructs.Construct, id *string, config *DefaultPrivilegesConfig) {
 	_init_.Initialize()
 

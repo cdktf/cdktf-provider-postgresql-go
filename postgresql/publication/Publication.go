@@ -2,14 +2,14 @@ package publication
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-postgresql-go/postgresql/v7/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-postgresql-go/postgresql/v8/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-postgresql-go/postgresql/v7/publication/internal"
+	"github.com/cdktf/cdktf-provider-postgresql-go/postgresql/v8/publication/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.19.0/docs/resources/publication postgresql_publication}.
+// Represents a {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.20.0/docs/resources/publication postgresql_publication}.
 type Publication interface {
 	cdktf.TerraformResource
 	AllTables() interface{}
@@ -477,7 +477,7 @@ func (j *jsiiProxy_Publication) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.19.0/docs/resources/publication postgresql_publication} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.20.0/docs/resources/publication postgresql_publication} Resource.
 func NewPublication(scope constructs.Construct, id *string, config *PublicationConfig) Publication {
 	_init_.Initialize()
 
@@ -495,7 +495,7 @@ func NewPublication(scope constructs.Construct, id *string, config *PublicationC
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.19.0/docs/resources/publication postgresql_publication} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.20.0/docs/resources/publication postgresql_publication} Resource.
 func NewPublication_Override(p Publication, scope constructs.Construct, id *string, config *PublicationConfig) {
 	_init_.Initialize()
 

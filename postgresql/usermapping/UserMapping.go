@@ -2,14 +2,14 @@ package usermapping
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-postgresql-go/postgresql/v7/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-postgresql-go/postgresql/v8/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-postgresql-go/postgresql/v7/usermapping/internal"
+	"github.com/cdktf/cdktf-provider-postgresql-go/postgresql/v8/usermapping/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.19.0/docs/resources/user_mapping postgresql_user_mapping}.
+// Represents a {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.20.0/docs/resources/user_mapping postgresql_user_mapping}.
 type UserMapping interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -356,7 +356,7 @@ func (j *jsiiProxy_UserMapping) UserNameInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.19.0/docs/resources/user_mapping postgresql_user_mapping} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.20.0/docs/resources/user_mapping postgresql_user_mapping} Resource.
 func NewUserMapping(scope constructs.Construct, id *string, config *UserMappingConfig) UserMapping {
 	_init_.Initialize()
 
@@ -374,7 +374,7 @@ func NewUserMapping(scope constructs.Construct, id *string, config *UserMappingC
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.19.0/docs/resources/user_mapping postgresql_user_mapping} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.20.0/docs/resources/user_mapping postgresql_user_mapping} Resource.
 func NewUserMapping_Override(u UserMapping, scope constructs.Construct, id *string, config *UserMappingConfig) {
 	_init_.Initialize()
 

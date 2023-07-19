@@ -2,14 +2,14 @@ package datapostgresqltables
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-postgresql-go/postgresql/v7/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-postgresql-go/postgresql/v8/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-postgresql-go/postgresql/v7/datapostgresqltables/internal"
+	"github.com/cdktf/cdktf-provider-postgresql-go/postgresql/v8/datapostgresqltables/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.19.0/docs/data-sources/tables postgresql_tables}.
+// Represents a {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.20.0/docs/data-sources/tables postgresql_tables}.
 type DataPostgresqlTables interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -436,7 +436,7 @@ func (j *jsiiProxy_DataPostgresqlTables) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.19.0/docs/data-sources/tables postgresql_tables} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.20.0/docs/data-sources/tables postgresql_tables} Data Source.
 func NewDataPostgresqlTables(scope constructs.Construct, id *string, config *DataPostgresqlTablesConfig) DataPostgresqlTables {
 	_init_.Initialize()
 
@@ -454,7 +454,7 @@ func NewDataPostgresqlTables(scope constructs.Construct, id *string, config *Dat
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.19.0/docs/data-sources/tables postgresql_tables} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.20.0/docs/data-sources/tables postgresql_tables} Data Source.
 func NewDataPostgresqlTables_Override(d DataPostgresqlTables, scope constructs.Construct, id *string, config *DataPostgresqlTablesConfig) {
 	_init_.Initialize()
 

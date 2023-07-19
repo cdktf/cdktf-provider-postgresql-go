@@ -2,14 +2,14 @@ package grantrole
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-postgresql-go/postgresql/v7/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-postgresql-go/postgresql/v8/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-postgresql-go/postgresql/v7/grantrole/internal"
+	"github.com/cdktf/cdktf-provider-postgresql-go/postgresql/v8/grantrole/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.19.0/docs/resources/grant_role postgresql_grant_role}.
+// Represents a {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.20.0/docs/resources/grant_role postgresql_grant_role}.
 type GrantRole interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -356,7 +356,7 @@ func (j *jsiiProxy_GrantRole) WithAdminOptionInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.19.0/docs/resources/grant_role postgresql_grant_role} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.20.0/docs/resources/grant_role postgresql_grant_role} Resource.
 func NewGrantRole(scope constructs.Construct, id *string, config *GrantRoleConfig) GrantRole {
 	_init_.Initialize()
 
@@ -374,7 +374,7 @@ func NewGrantRole(scope constructs.Construct, id *string, config *GrantRoleConfi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.19.0/docs/resources/grant_role postgresql_grant_role} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.20.0/docs/resources/grant_role postgresql_grant_role} Resource.
 func NewGrantRole_Override(g GrantRole, scope constructs.Construct, id *string, config *GrantRoleConfig) {
 	_init_.Initialize()
 

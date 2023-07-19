@@ -2,14 +2,14 @@ package replicationslot
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-postgresql-go/postgresql/v7/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-postgresql-go/postgresql/v8/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-postgresql-go/postgresql/v7/replicationslot/internal"
+	"github.com/cdktf/cdktf-provider-postgresql-go/postgresql/v8/replicationslot/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.19.0/docs/resources/replication_slot postgresql_replication_slot}.
+// Represents a {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.20.0/docs/resources/replication_slot postgresql_replication_slot}.
 type ReplicationSlot interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -356,7 +356,7 @@ func (j *jsiiProxy_ReplicationSlot) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.19.0/docs/resources/replication_slot postgresql_replication_slot} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.20.0/docs/resources/replication_slot postgresql_replication_slot} Resource.
 func NewReplicationSlot(scope constructs.Construct, id *string, config *ReplicationSlotConfig) ReplicationSlot {
 	_init_.Initialize()
 
@@ -374,7 +374,7 @@ func NewReplicationSlot(scope constructs.Construct, id *string, config *Replicat
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.19.0/docs/resources/replication_slot postgresql_replication_slot} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.20.0/docs/resources/replication_slot postgresql_replication_slot} Resource.
 func NewReplicationSlot_Override(r ReplicationSlot, scope constructs.Construct, id *string, config *ReplicationSlotConfig) {
 	_init_.Initialize()
 

@@ -2,14 +2,14 @@ package physicalreplicationslot
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-postgresql-go/postgresql/v7/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-postgresql-go/postgresql/v8/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-postgresql-go/postgresql/v7/physicalreplicationslot/internal"
+	"github.com/cdktf/cdktf-provider-postgresql-go/postgresql/v8/physicalreplicationslot/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.19.0/docs/resources/physical_replication_slot postgresql_physical_replication_slot}.
+// Represents a {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.20.0/docs/resources/physical_replication_slot postgresql_physical_replication_slot}.
 type PhysicalReplicationSlot interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -309,7 +309,7 @@ func (j *jsiiProxy_PhysicalReplicationSlot) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.19.0/docs/resources/physical_replication_slot postgresql_physical_replication_slot} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.20.0/docs/resources/physical_replication_slot postgresql_physical_replication_slot} Resource.
 func NewPhysicalReplicationSlot(scope constructs.Construct, id *string, config *PhysicalReplicationSlotConfig) PhysicalReplicationSlot {
 	_init_.Initialize()
 
@@ -327,7 +327,7 @@ func NewPhysicalReplicationSlot(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.19.0/docs/resources/physical_replication_slot postgresql_physical_replication_slot} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.20.0/docs/resources/physical_replication_slot postgresql_physical_replication_slot} Resource.
 func NewPhysicalReplicationSlot_Override(p PhysicalReplicationSlot, scope constructs.Construct, id *string, config *PhysicalReplicationSlotConfig) {
 	_init_.Initialize()
 
