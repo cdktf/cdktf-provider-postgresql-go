@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.20.0/docs/resources/function postgresql_function}.
+// Represents a {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.21.0/docs/resources/function postgresql_function}.
 type FunctionResource interface {
 	cdktf.TerraformResource
 	Arg() FunctionResourceArgList
@@ -65,6 +65,9 @@ type FunctionResource interface {
 	NameInput() *string
 	// The tree node.
 	Node() constructs.Node
+	Parallel() *string
+	SetParallel(val *string)
+	ParallelInput() *string
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
@@ -81,12 +84,21 @@ type FunctionResource interface {
 	Schema() *string
 	SetSchema(val *string)
 	SchemaInput() *string
+	SecurityDefiner() interface{}
+	SetSecurityDefiner(val interface{})
+	SecurityDefinerInput() interface{}
+	Strict() interface{}
+	SetStrict(val interface{})
+	StrictInput() interface{}
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
+	Volatility() *string
+	SetVolatility(val *string)
+	VolatilityInput() *string
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -121,8 +133,12 @@ type FunctionResource interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetParallel()
 	ResetReturns()
 	ResetSchema()
+	ResetSecurityDefiner()
+	ResetStrict()
+	ResetVolatility()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
 	ToMetadata() interface{}
@@ -378,6 +394,26 @@ func (j *jsiiProxy_FunctionResource) Node() constructs.Node {
 	return returns
 }
 
+func (j *jsiiProxy_FunctionResource) Parallel() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"parallel",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_FunctionResource) ParallelInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"parallelInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_FunctionResource) Provider() cdktf.TerraformProvider {
 	var returns cdktf.TerraformProvider
 	_jsii_.Get(
@@ -448,6 +484,46 @@ func (j *jsiiProxy_FunctionResource) SchemaInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_FunctionResource) SecurityDefiner() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"securityDefiner",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_FunctionResource) SecurityDefinerInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"securityDefinerInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_FunctionResource) Strict() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"strict",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_FunctionResource) StrictInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"strictInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_FunctionResource) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -478,8 +554,28 @@ func (j *jsiiProxy_FunctionResource) TerraformResourceType() *string {
 	return returns
 }
 
+func (j *jsiiProxy_FunctionResource) Volatility() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"volatility",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.20.0/docs/resources/function postgresql_function} Resource.
+func (j *jsiiProxy_FunctionResource) VolatilityInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"volatilityInput",
+		&returns,
+	)
+	return returns
+}
+
+
+// Create a new {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.21.0/docs/resources/function postgresql_function} Resource.
 func NewFunctionResource(scope constructs.Construct, id *string, config *FunctionResourceConfig) FunctionResource {
 	_init_.Initialize()
 
@@ -497,7 +593,7 @@ func NewFunctionResource(scope constructs.Construct, id *string, config *Functio
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.20.0/docs/resources/function postgresql_function} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.21.0/docs/resources/function postgresql_function} Resource.
 func NewFunctionResource_Override(f FunctionResource, scope constructs.Construct, id *string, config *FunctionResourceConfig) {
 	_init_.Initialize()
 
@@ -623,6 +719,17 @@ func (j *jsiiProxy_FunctionResource)SetName(val *string) {
 	)
 }
 
+func (j *jsiiProxy_FunctionResource)SetParallel(val *string) {
+	if err := j.validateSetParallelParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"parallel",
+		val,
+	)
+}
+
 func (j *jsiiProxy_FunctionResource)SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
@@ -660,6 +767,39 @@ func (j *jsiiProxy_FunctionResource)SetSchema(val *string) {
 	_jsii_.Set(
 		j,
 		"schema",
+		val,
+	)
+}
+
+func (j *jsiiProxy_FunctionResource)SetSecurityDefiner(val interface{}) {
+	if err := j.validateSetSecurityDefinerParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"securityDefiner",
+		val,
+	)
+}
+
+func (j *jsiiProxy_FunctionResource)SetStrict(val interface{}) {
+	if err := j.validateSetStrictParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"strict",
+		val,
+	)
+}
+
+func (j *jsiiProxy_FunctionResource)SetVolatility(val *string) {
+	if err := j.validateSetVolatilityParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"volatility",
 		val,
 	)
 }
@@ -989,6 +1129,14 @@ func (f *jsiiProxy_FunctionResource) ResetOverrideLogicalId() {
 	)
 }
 
+func (f *jsiiProxy_FunctionResource) ResetParallel() {
+	_jsii_.InvokeVoid(
+		f,
+		"resetParallel",
+		nil, // no parameters
+	)
+}
+
 func (f *jsiiProxy_FunctionResource) ResetReturns() {
 	_jsii_.InvokeVoid(
 		f,
@@ -1001,6 +1149,30 @@ func (f *jsiiProxy_FunctionResource) ResetSchema() {
 	_jsii_.InvokeVoid(
 		f,
 		"resetSchema",
+		nil, // no parameters
+	)
+}
+
+func (f *jsiiProxy_FunctionResource) ResetSecurityDefiner() {
+	_jsii_.InvokeVoid(
+		f,
+		"resetSecurityDefiner",
+		nil, // no parameters
+	)
+}
+
+func (f *jsiiProxy_FunctionResource) ResetStrict() {
+	_jsii_.InvokeVoid(
+		f,
+		"resetStrict",
+		nil, // no parameters
+	)
+}
+
+func (f *jsiiProxy_FunctionResource) ResetVolatility() {
+	_jsii_.InvokeVoid(
+		f,
+		"resetVolatility",
 		nil, // no parameters
 	)
 }
