@@ -5,9 +5,9 @@ package schema
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-postgresql-go/postgresql/v10/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-postgresql-go/postgresql/v11/jsii"
 
-	"github.com/cdktf/cdktf-provider-postgresql-go/postgresql/v10/schema/internal"
+	"github.com/cdktf/cdktf-provider-postgresql-go/postgresql/v11/schema/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 

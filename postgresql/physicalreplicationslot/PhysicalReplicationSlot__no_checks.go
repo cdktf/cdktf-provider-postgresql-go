@@ -59,7 +59,15 @@ func (p *jsiiProxy_PhysicalReplicationSlot) validateInterpolationForAttributePar
 	return nil
 }
 
+func (p *jsiiProxy_PhysicalReplicationSlot) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (p *jsiiProxy_PhysicalReplicationSlot) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (p *jsiiProxy_PhysicalReplicationSlot) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
