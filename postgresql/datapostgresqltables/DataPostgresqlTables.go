@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.21.0/docs/data-sources/tables postgresql_tables}.
+// Represents a {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.22.0/docs/data-sources/tables postgresql_tables}.
 type DataPostgresqlTables interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -443,7 +443,7 @@ func (j *jsiiProxy_DataPostgresqlTables) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.21.0/docs/data-sources/tables postgresql_tables} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.22.0/docs/data-sources/tables postgresql_tables} Data Source.
 func NewDataPostgresqlTables(scope constructs.Construct, id *string, config *DataPostgresqlTablesConfig) DataPostgresqlTables {
 	_init_.Initialize()
 
@@ -461,7 +461,7 @@ func NewDataPostgresqlTables(scope constructs.Construct, id *string, config *Dat
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.21.0/docs/data-sources/tables postgresql_tables} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.22.0/docs/data-sources/tables postgresql_tables} Data Source.
 func NewDataPostgresqlTables_Override(d DataPostgresqlTables, scope constructs.Construct, id *string, config *DataPostgresqlTablesConfig) {
 	_init_.Initialize()
 

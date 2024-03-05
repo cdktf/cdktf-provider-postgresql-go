@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.21.0/docs/resources/role postgresql_role}.
+// Represents a {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.22.0/docs/resources/role postgresql_role}.
 type Role interface {
 	cdktf.TerraformResource
 	AssumeRole() *string
@@ -789,7 +789,7 @@ func (j *jsiiProxy_Role) ValidUntilInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.21.0/docs/resources/role postgresql_role} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.22.0/docs/resources/role postgresql_role} Resource.
 func NewRole(scope constructs.Construct, id *string, config *RoleConfig) Role {
 	_init_.Initialize()
 
@@ -807,7 +807,7 @@ func NewRole(scope constructs.Construct, id *string, config *RoleConfig) Role {
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.21.0/docs/resources/role postgresql_role} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.22.0/docs/resources/role postgresql_role} Resource.
 func NewRole_Override(r Role, scope constructs.Construct, id *string, config *RoleConfig) {
 	_init_.Initialize()
 

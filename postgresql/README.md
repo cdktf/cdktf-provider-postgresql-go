@@ -1,12 +1,15 @@
-# CDKTF Go bindings for cyrilgdn/postgresql provider version 1.21.0
+# CDKTF Go bindings for cyrilgdn/postgresql provider version 1.22.0
 
-This repo builds and publishes the [Terraform postgresql provider](https://registry.terraform.io/providers/cyrilgdn/postgresql/1.21.0/docs) bindings for [CDK for Terraform](https://cdk.tf).
+This repo builds and publishes the [Terraform postgresql provider](https://registry.terraform.io/providers/cyrilgdn/postgresql/1.22.0/docs) bindings for [CDK for Terraform](https://cdk.tf).
 
 ## Go Package
 
 The go package is generated into the [`github.com/cdktf/cdktf-provider-postgresql-go`](https://github.com/cdktf/cdktf-provider-postgresql-go) package.
 
-`go get github.com/cdktf/cdktf-provider-postgresql-go/postgresql`
+`go get github.com/cdktf/cdktf-provider-postgresql-go/postgresql/<version>`
+
+Where `<version>` is the version of the prebuilt provider you would like to use e.g. `v11`. The full module name can be found
+within the [go.mod](https://github.com/cdktf/cdktf-provider-postgresql-go/blob/main/postgresql/go.mod#L1) file.
 
 ## Docs
 
@@ -20,7 +23,7 @@ This project is explicitly not tracking the Terraform postgresql provider versio
 These are the upstream dependencies:
 
 * [CDK for Terraform](https://cdk.tf)
-* [Terraform postgresql provider](https://registry.terraform.io/providers/cyrilgdn/postgresql/1.21.0)
+* [Terraform postgresql provider](https://registry.terraform.io/providers/cyrilgdn/postgresql/1.22.0)
 * [Terraform Engine](https://terraform.io)
 
 If there are breaking changes (backward incompatible) in any of the above, the major version of this project will be bumped.
