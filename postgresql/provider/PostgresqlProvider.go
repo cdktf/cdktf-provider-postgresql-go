@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.22.0/docs postgresql}.
+// Represents a {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.23.0/docs postgresql}.
 type PostgresqlProvider interface {
 	cdktf.TerraformProvider
 	Alias() *string
@@ -56,6 +56,9 @@ type PostgresqlProvider interface {
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
+	GcpIamImpersonateServiceAccount() *string
+	SetGcpIamImpersonateServiceAccount(val *string)
+	GcpIamImpersonateServiceAccountInput() *string
 	Host() *string
 	SetHost(val *string)
 	HostInput() *string
@@ -114,6 +117,7 @@ type PostgresqlProvider interface {
 	ResetDatabase()
 	ResetDatabaseUsername()
 	ResetExpectedVersion()
+	ResetGcpIamImpersonateServiceAccount()
 	ResetHost()
 	ResetMaxConnections()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -405,6 +409,26 @@ func (j *jsiiProxy_PostgresqlProvider) FriendlyUniqueId() *string {
 	return returns
 }
 
+func (j *jsiiProxy_PostgresqlProvider) GcpIamImpersonateServiceAccount() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"gcpIamImpersonateServiceAccount",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PostgresqlProvider) GcpIamImpersonateServiceAccountInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"gcpIamImpersonateServiceAccountInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_PostgresqlProvider) Host() *string {
 	var returns *string
 	_jsii_.Get(
@@ -666,7 +690,7 @@ func (j *jsiiProxy_PostgresqlProvider) UsernameInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.22.0/docs postgresql} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.23.0/docs postgresql} Resource.
 func NewPostgresqlProvider(scope constructs.Construct, id *string, config *PostgresqlProviderConfig) PostgresqlProvider {
 	_init_.Initialize()
 
@@ -684,7 +708,7 @@ func NewPostgresqlProvider(scope constructs.Construct, id *string, config *Postg
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.22.0/docs postgresql} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.23.0/docs postgresql} Resource.
 func NewPostgresqlProvider_Override(p PostgresqlProvider, scope constructs.Construct, id *string, config *PostgresqlProviderConfig) {
 	_init_.Initialize()
 
@@ -788,6 +812,14 @@ func (j *jsiiProxy_PostgresqlProvider)SetExpectedVersion(val *string) {
 	_jsii_.Set(
 		j,
 		"expectedVersion",
+		val,
+	)
+}
+
+func (j *jsiiProxy_PostgresqlProvider)SetGcpIamImpersonateServiceAccount(val *string) {
+	_jsii_.Set(
+		j,
+		"gcpIamImpersonateServiceAccount",
 		val,
 	)
 }
@@ -1084,6 +1116,14 @@ func (p *jsiiProxy_PostgresqlProvider) ResetExpectedVersion() {
 	_jsii_.InvokeVoid(
 		p,
 		"resetExpectedVersion",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PostgresqlProvider) ResetGcpIamImpersonateServiceAccount() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetGcpIamImpersonateServiceAccount",
 		nil, // no parameters
 	)
 }

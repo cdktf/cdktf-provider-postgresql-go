@@ -12,12 +12,15 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.22.0/docs/resources/database postgresql_database}.
+// Represents a {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.23.0/docs/resources/database postgresql_database}.
 type Database interface {
 	cdktf.TerraformResource
 	AllowConnections() interface{}
 	SetAllowConnections(val interface{})
 	AllowConnectionsInput() interface{}
+	AlterObjectOwnership() interface{}
+	SetAlterObjectOwnership(val interface{})
+	AlterObjectOwnershipInput() interface{}
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
@@ -138,6 +141,7 @@ type Database interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	ResetAllowConnections()
+	ResetAlterObjectOwnership()
 	ResetConnectionLimit()
 	ResetEncoding()
 	ResetId()
@@ -183,6 +187,26 @@ func (j *jsiiProxy_Database) AllowConnectionsInput() interface{} {
 	_jsii_.Get(
 		j,
 		"allowConnectionsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Database) AlterObjectOwnership() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"alterObjectOwnership",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Database) AlterObjectOwnershipInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"alterObjectOwnershipInput",
 		&returns,
 	)
 	return returns
@@ -549,7 +573,7 @@ func (j *jsiiProxy_Database) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.22.0/docs/resources/database postgresql_database} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.23.0/docs/resources/database postgresql_database} Resource.
 func NewDatabase(scope constructs.Construct, id *string, config *DatabaseConfig) Database {
 	_init_.Initialize()
 
@@ -567,7 +591,7 @@ func NewDatabase(scope constructs.Construct, id *string, config *DatabaseConfig)
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.22.0/docs/resources/database postgresql_database} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.23.0/docs/resources/database postgresql_database} Resource.
 func NewDatabase_Override(d Database, scope constructs.Construct, id *string, config *DatabaseConfig) {
 	_init_.Initialize()
 
@@ -585,6 +609,17 @@ func (j *jsiiProxy_Database)SetAllowConnections(val interface{}) {
 	_jsii_.Set(
 		j,
 		"allowConnections",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Database)SetAlterObjectOwnership(val interface{}) {
+	if err := j.validateSetAlterObjectOwnershipParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"alterObjectOwnership",
 		val,
 	)
 }
@@ -1124,6 +1159,14 @@ func (d *jsiiProxy_Database) ResetAllowConnections() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetAllowConnections",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_Database) ResetAlterObjectOwnership() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetAlterObjectOwnership",
 		nil, // no parameters
 	)
 }
