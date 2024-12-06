@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.24.0/docs/resources/default_privileges postgresql_default_privileges}.
+// Represents a {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.25.0/docs/resources/default_privileges postgresql_default_privileges}.
 type DefaultPrivileges interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -473,7 +473,7 @@ func (j *jsiiProxy_DefaultPrivileges) WithGrantOptionInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.24.0/docs/resources/default_privileges postgresql_default_privileges} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.25.0/docs/resources/default_privileges postgresql_default_privileges} Resource.
 func NewDefaultPrivileges(scope constructs.Construct, id *string, config *DefaultPrivilegesConfig) DefaultPrivileges {
 	_init_.Initialize()
 
@@ -491,7 +491,7 @@ func NewDefaultPrivileges(scope constructs.Construct, id *string, config *Defaul
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.24.0/docs/resources/default_privileges postgresql_default_privileges} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.25.0/docs/resources/default_privileges postgresql_default_privileges} Resource.
 func NewDefaultPrivileges_Override(d DefaultPrivileges, scope constructs.Construct, id *string, config *DefaultPrivilegesConfig) {
 	_init_.Initialize()
 
