@@ -521,6 +521,22 @@ func (j *jsiiProxy_Role) validateSetPasswordParameters(val *string) error {
 	return nil
 }
 
+func (j *jsiiProxy_Role) validateSetPasswordWoParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_Role) validateSetPasswordWoVersionParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_Role) validateSetProvisionersParameters(val *[]interface{}) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {

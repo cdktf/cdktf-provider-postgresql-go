@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.25.0/docs/resources/role postgresql_role}.
+// Represents a {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.26.0/docs/resources/role postgresql_role}.
 type Role interface {
 	cdktf.TerraformResource
 	AssumeRole() *string
@@ -84,6 +84,12 @@ type Role interface {
 	Password() *string
 	SetPassword(val *string)
 	PasswordInput() *string
+	PasswordWo() *string
+	SetPasswordWo(val *string)
+	PasswordWoInput() *string
+	PasswordWoVersion() *string
+	SetPasswordWoVersion(val *string)
+	PasswordWoVersionInput() *string
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
@@ -182,6 +188,8 @@ type Role interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetPassword()
+	ResetPasswordWo()
+	ResetPasswordWoVersion()
 	ResetReplication()
 	ResetRoles()
 	ResetSearchPath()
@@ -568,6 +576,46 @@ func (j *jsiiProxy_Role) PasswordInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_Role) PasswordWo() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"passwordWo",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Role) PasswordWoInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"passwordWoInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Role) PasswordWoVersion() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"passwordWoVersion",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Role) PasswordWoVersionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"passwordWoVersionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_Role) Provider() cdktf.TerraformProvider {
 	var returns cdktf.TerraformProvider
 	_jsii_.Get(
@@ -789,7 +837,7 @@ func (j *jsiiProxy_Role) ValidUntilInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.25.0/docs/resources/role postgresql_role} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.26.0/docs/resources/role postgresql_role} Resource.
 func NewRole(scope constructs.Construct, id *string, config *RoleConfig) Role {
 	_init_.Initialize()
 
@@ -807,7 +855,7 @@ func NewRole(scope constructs.Construct, id *string, config *RoleConfig) Role {
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.25.0/docs/resources/role postgresql_role} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.26.0/docs/resources/role postgresql_role} Resource.
 func NewRole_Override(r Role, scope constructs.Construct, id *string, config *RoleConfig) {
 	_init_.Initialize()
 
@@ -1006,6 +1054,28 @@ func (j *jsiiProxy_Role)SetPassword(val *string) {
 	_jsii_.Set(
 		j,
 		"password",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Role)SetPasswordWo(val *string) {
+	if err := j.validateSetPasswordWoParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"passwordWo",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Role)SetPasswordWoVersion(val *string) {
+	if err := j.validateSetPasswordWoVersionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"passwordWoVersion",
 		val,
 	)
 }
@@ -1570,6 +1640,22 @@ func (r *jsiiProxy_Role) ResetPassword() {
 	_jsii_.InvokeVoid(
 		r,
 		"resetPassword",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_Role) ResetPasswordWo() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetPasswordWo",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_Role) ResetPasswordWoVersion() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetPasswordWoVersion",
 		nil, // no parameters
 	)
 }
